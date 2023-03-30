@@ -1,0 +1,444 @@
+$color-orange : #fc8729;
+$color-blue :  #095fa2 ;
+$main-font : "Roboto", sans-serif;
+$light-gray : #f6f6f6;
+$light-dark-gray: #ebeae8;
+$font-gray: #7e7f7f;
+$border: #c3c3c3;
+$bg-gray: #51545d;
+$bg-dark-gray: #353943;
+$white: #FFFFFF;
+$black: #000000;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+*,body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 1.125rem;
+}
+p .small {
+  font-size: 0.875rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+h1 .sub {
+  font-size: 3rem;
+  font-weight: 800;
+  color: $border;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.pt-6 {
+  padding-top: 5rem;
+}
+
+.pb-6 {
+  padding-bottom: 5rem;
+}
+ 
+
+header {
+  padding: 1rem 0;
+  background-color: $white;
+  border-bottom: 1.8px solid $light-dark-gray;
+  nav {
+    .logo {
+      
+    }
+    .__navbar {
+      .nav-item {
+        .nav-link {
+          color: #000;
+        }
+        .dropdown-menu {
+          .dropdown-item {
+          }
+        }
+        .get-header-link {
+          .airplane {
+            background-color: $color-blue;
+            padding: 0.58rem 1rem;
+            border-top-left-radius: 0.3rem;
+            border-bottom-left-radius: 0.3rem;
+            img{
+            width: 1rem;
+            height: 1rem;
+          }
+          }
+          .get-btn {
+            padding: 0.6rem 1rem;
+            border-top-right-radius: 0.3rem;
+            border-bottom-right-radius: 0.3rem;
+            background-color: $color-orange;
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+.title-header {
+  background-color: $light-gray;
+  padding: 1rem 0;
+  box-shadow: 0px 16px 6px -13px rgba(0,0,0,0.86);
+  h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $font-gray;
+    }
+  }
+}
+// .mobile__navigation {
+//   height: 0%;
+//   width: 100%;
+//   position: fixed;
+//   z-index: 100;
+//   top: 0;
+//   left: 0;
+//   background-color: #007a74;
+//   overflow-y: hidden;
+//   transition: 0.5s;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+// .mobile__navigation .overlay-content {
+//   position: relative;
+//   top: 25%;
+//   width: 100%;
+//   text-align: center;
+//   margin-top: 30px;
+//   list-style: none;
+// }
+// .mobile__navigation a {
+//   padding: 8px;
+//   text-decoration: none;
+//   font-size: 1.8rem;
+//   color: $white;
+//   display: block;
+//   transition: 0.3s;
+// }
+// .mobile__navigation aa:hover, .mobile__navigation aa:focus {
+//   color: #8bf6e0;
+// }
+// .mobile__navigation .closebtn {
+//   position: absolute;
+//   top: -1rem;
+//   right: 0px;
+//   font-size: 5rem;
+// }
+// .mobile__navigation .btn-white {
+//   margin-top: 1.5rem;
+// }
+// .mobile__navigation .btn-white a {
+//   color: #202020;
+// }
+
+.agreement-hero {
+  background-color: $light-dark-gray;
+  box-shadow: 0px 15px 13px -13px rgba(0,0,0,0.3);
+  .pogress-bar {
+    position: relative;
+    font-size: 0.9rem;
+    padding: .3rem 0;
+    font-weight: 400;
+    width: 20rem;
+    background-color: $white;
+    border-radius: 0.4rem;
+    &::before {
+      content: "";
+      border-top-left-radius: 0.3rem;
+      border-bottom-left-radius: 0.3rem;
+      position: absolute;
+      background-color: $color-orange;
+      width: 2.2rem;
+      height: 2rem;
+      top: -1px;
+      opacity: 0.7;
+    }
+  }
+  .heading {
+    h4 {
+      font-size: 1.2rem;
+      color: #373b3d;
+      font-weight: 500;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .calendar {
+    h6 {
+      font-size: 1rem;
+      color: #373b3d;
+      font-weight: 500;
+    }
+    input {
+      background-color: $white;
+      border: 1px solid $border;
+      border-radius: 0.3rem;
+      padding: 0.5rem 1rem;
+      color: $border;
+    }
+  }
+  .cta-save {
+    .save {
+      outline: none;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $font-gray;
+      background-color: $white;
+      border-radius: 0.3rem;
+      border: 1px solid $border;
+      padding: 0.4rem 1rem;
+    }
+    .continue {
+      position: relative;
+      font-size: 1.25rem;
+      font-weight: 500;
+      outline: none;
+      padding: 0.3rem 1.8rem;
+      background-color: $color-blue;
+      border-radius: 0.3rem;
+      color: $white;
+      border: none;
+      .arrow {
+        position: absolute;
+        background-color: orange;
+        color: white;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+    }
+  }
+  .get-help {
+    background-color: $white;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 6px 12px 20px rgb(132 132 132 / 20%);
+    padding: 1rem 0;
+    h5 {
+      font-size: 1.5rem;
+      color: $color-blue;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    .help-box {
+      textarea {
+        padding: 0.5rem;
+        border-radius: .3rem;
+        border-color: $border;
+      }
+    }
+    .get-help-btn {
+      background-color: $color-blue;
+      color: $white;
+      font-size: 1.3rem;
+      font-weight: 500;
+      border: none;
+      padding: 0.5rem 2rem;
+    }
+  }
+}
+
+.middle-content{
+    padding: 2rem 5rem;
+    box-shadow: 6px 12px 20px rgb(132 132 132 / 40%);
+    h3{
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    p{
+        font-size: .9rem;
+
+    }
+}
+
+footer {
+  background: $bg-gray;
+  padding-top: 10rem;
+  position: relative;
+}
+
+footer .logo {
+  margin-bottom: 2rem;
+}
+footer .logo img {
+  width: 75%;
+}
+
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: $white;
+}
+footer p {
+  margin: 0;
+  font-size: 0.875em;
+  opacity: 0.5;
+}
+footer .terms__ li a {
+  color: rgb(235, 232, 232);
+  font-size: 0.875em;
+  opacity: 0.5;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+footer ul li {
+  margin-bottom: 0.4rem;
+}
+footer ul li a {
+  color: rgb(213, 212, 212);
+  text-decoration: none;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+}
+footer ul li a:hover {
+  color: #202020;
+}
+footer ul li a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #000;
+  bottom: 2px;
+  transform: scale(0, 1);
+  transition: transform 0.3s;
+  transform-origin: center top;
+}
+footer ul li a:hover::after {
+  transform: scale(1, 1);
+}
+footer .social__icons li {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+footer .social__icons li a {
+  background-color: $white;
+  font-size: 1.1rem;
+  color: #202020;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 3rem;
+  margin-right: 0.6rem;
+}
+footer .social__icons li a:hover {
+  background-color: #202020;
+  color: $white;
+  transition: all 0.3s ease;
+}
+footer .social__icons li a:hover::after {
+  all: unset;
+}
+.footer-bottom {
+  text-align: center;
+  background-color: $bg-dark-gray;
+  padding: 2rem 0;
+
+  p {
+    font-size: 1rem;
+    color: $border;
+  }
+  
+}
+.chat-with-us{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  a{
+    img{
+      width: 10rem;
+    }
+  }
+}
+.footer-tel{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: $border;
+  &:hover{
+    color: $border;
+  }
+}
+
+.footer-text{
+  margin-top: .5rem;
+ font-size: 1rem;
+ color: $border;
+}
